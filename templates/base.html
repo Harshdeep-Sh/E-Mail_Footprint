@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #BFEAF5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: rgba(6, 48, 104, 0.864);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+        }
+
+        img {
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 300px;
+            width: 350px;
+        }
+
+        #url {
+            height: 25px;
+            width: 250px;
+            font-weight: bolder;
+        }
+
+        #Result {
+            border-radius: 10px;
+            border-color: rgb(241, 241, 165);
+            height: 100px;
+            width: 500px;
+            border-style: solid;
+            font-weight: bolder;
+        }
+
+        #text {
+            height: 150px;
+            width: 500px;
+            border-radius: 10px;
+            padding-left: 50px;
+        }
+
+        #ScanWebsite {
+            height: 30px;
+            width: 100px;
+            color: green;
+            font: size 50%;
+            font-weight: bolder;
+            cursor: pointer;
+            border-color: darkgoldenrod;
+            border-radius: 4px;
+        }
+
+        a {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-align: right;
+            color: rgb(39, 117, 117);
+            overflow: scroll;
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        nav a:hover {
+            color: rgb(161, 120, 69);
+        }
+
+        .top-container {
+            background-color: #82AAE3;
+            margin-top: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            text-align: left;
+            font-family: 'Ubuntu', sans-serif;
+            padding-left: 10px;
+            color: rgb(39, 117, 117);
+            display: inline-block;
+
+        }
+        .reference{
+            text-align: right;
+        }
+
+        #original{
+            color: #BFEAF5;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+    {% block head%} {% endblock %}
+</head>
+
+<body>
+    <div class="top-container">
+        <nav>
+            <!-- <div class="name">
+                <p>Harshdeep Shrivastava</p>
+            </div> -->
+            <div class="reference">
+                <a href="#">Info</a>
+                <a href="#">Contact us</a>
+                <a href="#">About Us</a>
+            </div>
+
+        </nav>
+    </div>
+    <p id="original">To check how to View mail in original format, click <a href="templates\original_view.html"> here</a></p>
+
+    <div class="container">
+        {% block body%} {% endblock %}
+    </div>
+</body>
+
+</html>

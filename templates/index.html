@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head%}
+        <title>
+            E-Mail Footprinting
+        </title>
+{% endblock %}
+{% block body%}
+       
+    <img src="/static/Footprinting.png">
+        <h1>E-Mail Footprinting</h1>
+    <form action="/check" method='POST'>
+        <p> <input type="text" id="text" name='text' placeholder="Enter your E-Mail in Original Format"> </p>
+        <p>   <input type="submit" id="ScanWebsite" value="Scan E-Mail"></p>
+        <p> <input type="text" placeholder="      Result" id="Result" value="{{post}}"> </p>
+    </form>
+
+{% endblock %}
