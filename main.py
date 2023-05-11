@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from app import urlchkk
 
+#Using flask to integrate 
 
 app = Flask(__name__)
 
