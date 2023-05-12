@@ -2,7 +2,7 @@
 
 def urlchkk(n):
     
-    return none
+    return 0
 #     if n.count("https://")==1:
 #         if len(n)<75:
 #             if (n.find("$")==-1 or n.find("@")==-1):
