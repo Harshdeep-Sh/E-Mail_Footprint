@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from app import urlchkk
+from app import ipSearch
 
 
 app = Flask(__name__)
@@ -12,8 +12,8 @@ def index():
 def posts():
     try:
         if (request.method == 'POST'):
-            msg = urlchkk(request.form.get("text"))
-            # print(msg)
+            msg = ipSearch(request.form.get("text"))
+            print(msg)
             return render_template('index.html', post=msg)
     except Exception as e:
         return e

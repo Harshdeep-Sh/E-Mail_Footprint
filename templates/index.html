@@ -10,9 +10,11 @@
     <img src="/static/Footprinting.png">
         <h1>E-Mail Footprinting</h1>
     <form action="/check" method='POST'>
-        <p> <input type="text" id="text" name='text' placeholder="Enter your E-Mail in Original Format"> </p>
+        <!-- <input type="text" id="text" name='text' placeholder="Enter your E-Mail in Original Format"> -->
+        <textarea name="text" id="text" cols="30" rows="10" wrap="hard"></textarea>
         <p>   <input type="submit" id="ScanWebsite" value="Scan E-Mail"></p>
-        <p> <input type="text" placeholder="      Result" id="Result" value="{{post}}"> </p>
+        <textarea name="text" id="Result" cols="30" rows="10" wrap="hard">{{post}}</textarea>
+        <!-- <p> <input type="text" placeholder="      Result" id="Result" value="{{post}}"> </p> -->
     </form>
 
 {% endblock %}
